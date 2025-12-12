@@ -439,6 +439,7 @@
         let currentFileType = "";
         let currentFileName = "";
         let isEditing = false;
+        let currentObjectUrl = null;
 
         window.renderRecentFiles = function(items) {
             if (!items || items.length === 0) { els.recentFilesList.innerHTML = `<div class="col-span-1 sm:col-span-2 text-center text-gray-400 py-8 italic text-sm">Carpeta vacía</div>`; els.recentFilesContainer.classList.remove('hidden'); return; }
